@@ -13,5 +13,5 @@ In this mini-project, you will gain experience with Spark by implementing the Pa
 Recall from lectures this week that an important concept in MapReduce frameworks is that of "key-value pairs". The key of a key-value pair is some unique identifier for some logical object, e.g. a website. The value is some metadata associated with the logical object the key identifies, e.g. information on the outbound links for a website. In Spark, a key-value pair is represented using the Tuple2 class. For example, to create a new key-value pair from some key k and some value v you can use the following code:
 
 
-Tuple2 kvPair = new Tuple2(k, v);
+Tuple2 kvPair = new Tuple2(k, v);
 Spark uses special-purpose RDD objects to store datasets containing Tuple2 objects (i.e. key-value pairs). Rather than using the standard JavaRDD class, RDDs of Tuple2 objects use the JavaPairRDD class.
